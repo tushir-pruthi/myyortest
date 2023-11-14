@@ -1,0 +1,7 @@
+Resources:
+  ihopethatitwouldbebucketname:
+    Type: 'AWS::S3::Bucket'
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 675e6e2b-07e9-4c0d-bef3-46ac492f51a2
+    AccessControl: PublicRead    
