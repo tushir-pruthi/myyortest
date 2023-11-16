@@ -22,3 +22,12 @@ resource "aws_s3_bucket" "example" {
     yor_trace = "492ae1ff-a6f3-41eb-8b6f-241782ff2bab"
   }
 }
+
+
+resource "aws_s3_bucket_versioning" "example" {
+  bucket = aws_s3_bucket.example.id
+
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
