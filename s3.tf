@@ -8,7 +8,7 @@ terraform {
 }
 ### Temporary Credentials, uploaded on git, making sure that its expired already.
 provider "aws" {
-  region = "us-east-1"
+  region     = "us-east-1"
   access_key = "Key ID"
   secret_key = "Secret Key"
 }
@@ -20,5 +20,6 @@ resource "aws_s3_bucket" "example" {
     customer  = "MMS"
     yor_name  = "example"
     yor_trace = "492ae1ff-a6f3-41eb-8b6f-241782ff2bab"
+    git_repo  = "myyortest"
   }
 }
